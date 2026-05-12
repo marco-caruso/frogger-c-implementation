@@ -70,5 +70,4 @@ In this version, parallelism is managed at the operating system level.
 ## 📋 Submission Notes
 
 The project has been fully tested and is functional on Ubuntu 22.04 LTS (Native installation). The program complies with the mandatory single-task architecture for moving objects (frog, crocodiles, projectiles). 
-- Hierarchy: The repository follows the required structure, containing both /versione_processi and /versione_thread subdirectories with their respective source files and Makefiles.
-- Requirements: The code is fully compilable and executable according to the course standards.  
+The repository follows the required structure, containing both /versione_processi and /versione_thread subdirectories with their respective source files and Makefiles. The code is fully compilable and executable according to the course standards.  
