@@ -1,4 +1,4 @@
-#Frogger Resurrection - Operating Systems Project (SOPR)
+# Frogger Resurrection - Operating Systems Project (SOPR)
 
 This repository contains the implementation of the videogame Frogger Resurrection, developed as the final project for the Operating Systems course (A.Y. 2024-2025). The software simulates the classic vintage arcade game, focusing on concurrency management and inter-process communication (IPC) in a Linux environment.  
 
