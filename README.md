@@ -17,7 +17,7 @@ sudo apt install libncurses5-dev libsdl2-dev
 ## 🚀 Compilation and ExecutionThe project uses a Makefile to manage the build process.  Compilation:
 ```Bash
 make
-Execution:Bash./output
+./output
 ```
 
 Upon execution, a splash screen will appear; press any key to enter the Main Menu.
