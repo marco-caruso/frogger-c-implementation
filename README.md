@@ -50,4 +50,12 @@ The game starts with a base score of 200 points. Difficulty affects the speed of
 | **Time Penalty** | -1 every ~6s | -1 every ~6s | -1 every ~6s |
 
 
-🏗️ Technical ArchitectureThe project implements the Process-based Version as per the requirements:  Concurrency: Every dynamic object (frog, individual crocodiles, projectiles) is managed by a separate process.  Communication: A single Pipe is used to send coordinates from "producer" processes (game entities) to the "consumer" process (graphics and collision manager).  Graphics Manager: A central task redraws the ncurses matrix and verifies collisions in real-time.  Audio: Features thematic music for the intro, menu, victory, and game over screens using the SDL2 library.  📋 Submission NotesEnvironment: Fully tested and functional on the Ubuntu 22.04 Virtual Machine.  Structure: The project adheres to the required hierarchy, including source files and the Makefile.  
+## 🏗️ Technical Architecture
+The project implements the Process-based Version as per the requirements:  
+- Concurrency: Every dynamic object (frog, individual crocodiles, projectiles) is managed by a separate process.
+- Communication: A single Pipe is used to send coordinates from "producer" processes (game entities) to the "consumer" process (graphics and collision manager).
+- Graphics Manager: A central task redraws the ncurses matrix and verifies collisions in real-time.
+- Audio: Features thematic music for the intro, menu, victory, and game over screens using the SDL2 library.
+
+##📋 Submission Notes
+Fully tested and functional on the Ubuntu 22.04 Virtual Machine. The project adheres to the required hierarchy, including source files and the Makefile.  
