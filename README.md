@@ -51,12 +51,24 @@ The game starts with a base score of 200 points. Difficulty affects the speed of
 
 
 ## 🏗️ Technical Architecture
+The project is based on an N-Producers / 1-Consumer architecture, where multiple independent entities generate data sent to a central manager responsible for game logic and rendering.  
 
-The project implements the Process-based Version as per the requirements:  
-- Concurrency: Every dynamic object (frog, individual crocodiles, projectiles) is managed by a separate process.
-- Communication: A single Pipe is used to send coordinates from "producer" processes (game entities) to the "consumer" process (graphics and collision manager).
-- Graphics Manager: A central task redraws the ncurses matrix and verifies collisions in real-time.
-- Audio: Features thematic music for the intro, menu, victory, and game over screens using the SDL2 library.
+### 1. Process Version (/versione_processi)
+In this version, parallelism is managed at the operating system level.  
+- Parallelism: Every dynamic object (frog, crocodiles, and projectiles) is implemented as a single separate process generated via fork().
+- Communication (Pipes): A single pipe is mandatory for communication from the producer processes to the consumer process.
+- Graphics Manager: A central process (consumer) receives coordinates, manages drawing via the ncurses library, and verifies collisions or objects leaving the screen.
+- Synchronization: The pipe structure ensures that messages are processed in order, avoiding simultaneous writing conflicts.
 
-##📋 Submission Notes
-Fully tested and functional on the Ubuntu 22.04 Virtual Machine. The project adheres to the required hierarchy, including source files and the Makefile.  
+### 2. Thread Version (/versione_thread)This version leverages memory sharing within a single address space.  
+- Parallelism: Each game entity (frog, crocodiles, and projectiles) is managed as an independent thread using the pthread library.
+- Communication (Shared Memory): Communication between producer threads and the consumer thread occurs through a producer-consumer buffer in shared memory.
+- Synchronization (Mutex & Semaphores): Access to the buffer is strictly regulated to prevent race conditions:
+- Circular Buffer: The buffer is implemented as a limited, circular array structure.  Semaphores/Mutex: pthread synchronization tools are used to protect buffer slots from concurrent writes or overwriting unconsumed data.
+
+
+## 📋 Submission Notes
+
+The project has been fully tested and is functional on Ubuntu 22.04 LTS (Native installation). The program complies with the mandatory single-task architecture for moving objects (frog, crocodiles, projectiles). 
+- Hierarchy: The repository follows the required structure, containing both /versione_processi and /versione_thread subdirectories with their respective source files and Makefiles.
+- Requirements: The code is fully compilable and executable according to the course standards.  
