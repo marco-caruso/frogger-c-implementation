@@ -25,10 +25,16 @@ Upon execution, a splash screen will appear; press any key to enter the Main Men
 ## 🎮 Game Guide
 ### Menu Structure
 The menu offers four options selectable via arrow keys and the ENTER key:
+
 1 - Select Difficulty: Start a new run by choosing your preferred challenge level.
+
 2 - Controls: View a brief description of the keys used to move the frog.
+
 3 - Rules: A description of the game mechanics and objectives.
+
 4 - Credits: Information regarding the project developers.
+
+![Menu](images/Menu.png)
 
 ### Objectives and Mechanics
 - Goal: Guide the frog from the starting sidewalk to fill all 5 nests located at the top of the screen.
