@@ -20,7 +20,7 @@ make
 ./output
 ```
 
-![Home](image/Home.png)
+![Home](images/Home.png)
 
 Upon execution, a splash screen will appear; press any key to enter the Main Menu.
 
@@ -45,7 +45,7 @@ The menu offers four options selectable via arrow keys and the ENTER key:
 - Time: Each round must be completed before the timer expires.
 - Combat: The frog can fire two grenades (left and right) by pressing the Spacebar to neutralize crocodile projectiles.
 
-![Start](image/Start.png)
+![Start](images/Start.png)
 
 ### Difficulty and Scoring
 The game starts with a base score of 200 points. Difficulty affects the speed of crocodiles and their projectiles, as well as the score balance:
@@ -59,11 +59,11 @@ The game starts with a base score of 200 points. Difficulty affects the speed of
 | **Game Over** | -100 | -250 | -500 |
 | **Time Penalty** | -1 every ~6s | -1 every ~6s | -1 every ~6s |
 
-![Game](image/Game.png)
+![Game](images/Game.png)
 
-![Win](image/Win.png)
+![Win](images/Win.png)
 
-![Lose](image/Lose.png)
+![Lose](images/Lose.png)
 
 
 ## 🏗️ Technical Architecture
