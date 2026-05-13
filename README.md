@@ -1,6 +1,6 @@
-# Frogger Resurrection - Operating Systems Project (SOPR)
+# Frogger Resurrection - Multiprocessing and Multithreading with IPC & Ncurses
 
-This repository contains the implementation of the videogame Frogger Resurrection, developed as the final project for the Operating Systems course (A.Y. 2024-2025, University of Cagliari). The software simulates the classic vintage arcade game, focusing on concurrency management and inter-process communication (IPC) in a Linux environment.  
+This repository contains the C implementation of the videogame Frogger Resurrection, developed as the final project for the Operating Systems course  (A.Y. 2024-2025, University of Cagliari) . The software simulates the classic vintage arcade game, focusing on concurrency management and Inter-Process Communication (IPC) in a Linux environment.
 
 ## 👥 Authors
 The project was developed by:
