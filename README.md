@@ -61,9 +61,8 @@ The game starts with a base score of 200 points. Difficulty affects the speed of
 
 ![Game](images/Game.png)
 
-![Win](images/Win.png)
+![Win](images/WL.png)
 
-![Lose](images/Lose.png)
 
 
 ## 🏗️ Technical Architecture
