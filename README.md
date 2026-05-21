@@ -2,19 +2,19 @@
 
 This repository contains the C implementation of the videogame Frogger Resurrection, developed as the final project for the Operating Systems course  (A.Y. 2024-2025, University of Cagliari) . The software simulates the classic vintage arcade game, focusing on concurrency management and Inter-Process Communication (IPC) in a Linux environment.
 
-## 👥 Authors
+## Authors
 The project was developed by:
 - Contu Mauro (ID: 60/79/00115)
 - Caruso Marco (ID: 60/79/00107)
 
-## 🛠️ Requirements & Installation
+## Requirements & Installation
 The project is designed to run on Ubuntu 22.04 LTS (64-bit). You must install the ncurses library (for terminal graphics) and SDL2 (for audio support).  To install the dependencies, run:
 ```bash
 sudo apt update
 sudo apt install libncurses5-dev libsdl2-dev
 ```
 
-## 🚀 Compilation and ExecutionThe project uses a Makefile to manage the build process.  Compilation:
+## Compilation and ExecutionThe project uses a Makefile to manage the build process.  Compilation:
 ```Bash
 make
 ./output
@@ -24,7 +24,7 @@ make
 
 Upon execution, a splash screen will appear; press any key to enter the Main Menu.
 
-## 🎮 Game Guide
+## Game Guide
 ### Menu Structure
 The menu offers four options selectable via arrow keys and the ENTER key:
 
@@ -65,7 +65,7 @@ The game starts with a base score of 200 points. Difficulty affects the speed of
 
 
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 The project is based on an N-Producers / 1-Consumer architecture, where multiple independent entities generate data sent to a central manager responsible for game logic and rendering.  
 
 ### 1. Process Version (/versione_processi)
@@ -82,7 +82,7 @@ In this version, parallelism is managed at the operating system level.
 - Circular Buffer: The buffer is implemented as a limited, circular array structure.  Semaphores/Mutex: pthread synchronization tools are used to protect buffer slots from concurrent writes or overwriting unconsumed data.
 
 
-## 📋 Submission Notes
+## Submission Notes
 
 The project has been fully tested and is functional on Ubuntu 22.04 LTS (Native installation). The program complies with the mandatory single-task architecture for moving objects (frog, crocodiles, projectiles). 
 The repository follows the required structure, containing both /versione_processi and /versione_thread subdirectories with their respective source files and Makefiles. The code is fully compilable and executable according to the course standards.  
